@@ -1,0 +1,14 @@
+{
+	"landingPath" : "F:/interview_questions/submission/input/",
+	"inputDF" : [{"table":"department","fileType":"csv","separator":","},{"table":"employee","fileType":"csv","separator":","}],
+	"query" : "select employee.id as id, employee.name as name, department.id as deptId, employee.part_dt as part_dt, employee.hour as hour from employee inner join department on employee.dept_name=department.dept_name",
+	"dateRangeFlag":"y",
+	"commonColumn" : "dept_name",
+	"fromDt" : "20210216",
+	"toDt": "20210228",
+	"outputDF" : {"fileName":"processed","fileType":"parquet","separator":",","compressionType":"snappy"},
+	"outputPartition" : ["part_dt","hour"],
+	"coalesce" : 10,
+	"bucket":"10,'name'",
+	"tuningParams":{"spark.executor.memory": "8g", "spark.executor.cores":"3", "spark.cores.max": "3", "spark.driver.memory":"8g"}
+}

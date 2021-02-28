@@ -1,0 +1,41 @@
+{
+  "fields": [
+    {
+      "metadata": {},
+      "name": "id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "metadata": {},
+      "name": "name",
+      "nullable": true,
+      "type": "string"
+    },
+	{
+      "metadata": {},
+      "name": "salary",
+      "nullable": true,
+      "type": "string"
+    },
+	{
+      "metadata": {},
+      "name": "part_dt",
+      "nullable": true,
+      "type": "integer"
+    },
+	{
+      "metadata": {},
+      "name": "hour",
+      "nullable": true,
+      "type": "integer"
+    },
+		{
+      "metadata": {},
+      "name": "dept_name",
+      "nullable": true,
+      "type": "string"
+    }
+  ],
+  "type": "struct"
+}

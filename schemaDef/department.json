@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "metadata": {},
+      "name": "id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "metadata": {},
+      "name": "dept_name",
+      "nullable": true,
+      "type": "string"
+    },
+	{
+      "metadata": {},
+      "name": "part_dt",
+      "nullable": true,
+      "type": "integer"
+    }
+	,{
+      "metadata": {},
+      "name": "hour",
+      "nullable": true,
+      "type": "integer"
+    }
+  ],
+  "type": "struct"
+}

@@ -1,0 +1,61 @@
+{
+   "title":"input param",
+   "description":"A user input json",
+   "type":"object",
+   "properties":{
+      "landingPath":{
+         "description":"workingDIR",
+         "type":"string"
+      },
+      "inputDF":{
+         "description":"LIST OF DF'S",
+         "type":"array"
+      },
+      "query":{
+         "type":"string"
+      },
+      "dateRangeFlag":{
+         "type":"string"
+      },
+      "commonColumn":{
+         "type":"string"
+      },
+      "fromDt":{
+         "type":"string"
+      },
+      "toDt":{
+         "type":"string"
+      },
+      "outputDF":{
+         "type":"object"
+      },
+      "outputPartition":{
+         "type":"array"
+      },
+      "coalesce":{
+         "type":"integer"
+      },
+      "bucket":{
+         "type":"string"
+      },
+	  "tuningParams":{
+         "type":"object"
+      }
+   },
+   "required":[
+      "landingPath",
+      "inputDF",
+      "query",
+	  "dateRangeFlag",
+	  "commonColumn",
+	  "fromDt",
+	  "toDt",
+	  "outputDF",
+	  "outputPartition",
+	  "coalesce",
+	  "bucket",
+	  "tuningParams"
+   ]
+}
+
+
